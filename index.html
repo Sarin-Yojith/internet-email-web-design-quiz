@@ -6,13 +6,13 @@
   <title>Internet Email and Web Design Quiz</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* Neon animated border */
     .neon-border-box {
       position: relative;
       border-radius: 24px;
@@ -37,10 +37,59 @@
       text-align: left;
       margin-top: 20px;
       color: #9fb6cc;
+      padding-left: 1.2rem;
     }
 
     .feature-list li {
       margin-bottom: 8px;
+    }
+
+    .timer-note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 240, 255, 0.22);
+      background: rgba(0, 240, 255, 0.05);
+      color: #dffcff;
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.08);
+    }
+
+    .timer-note strong {
+      color: #00f0ff;
+    }
+
+    .linkedin-link {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #00f0ff;
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      background: rgba(0, 240, 255, 0.05);
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.1);
+    }
+
+    .linkedin-link:hover {
+      color: #ffffff;
+      background: rgba(0, 240, 255, 0.15);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 576px) {
+      .neon-inner {
+        padding: 28px 16px;
+      }
+
+      .feature-list {
+        font-size: 14px;
+      }
+
+      .timer-note {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -50,7 +99,6 @@
 
   <main class="landing-page">
     <div class="container py-5">
-
       <div class="neon-border-box mx-auto" style="max-width: 820px;">
         <div class="neon-inner text-center">
 
@@ -62,8 +110,20 @@
             Created by <span class="highlight-text">Sarin Yojith</span>
           </p>
 
+          <p class="mb-3">
+            <a href="https://linkedin.com/in/sarin-yojith-6b224535b" target="_blank" class="linkedin-link">
+              🔗 View LinkedIn Profile
+            </a>
+          </p>
+
           <p class="hero-text mb-3">
-            This is a <strong>practice quiz system</strong> designed to help you prepare for your final examination.
+            This is a <strong>practice quiz system</strong> designed to help you prepare for your main examination in
+            <strong>Internet Email and Web Design</strong>.
+          </p>
+
+          <p class="hero-text mb-3">
+            This practice includes important theory areas that usually appear in exams and quizzes. It is designed to
+            improve your understanding, test your memory, and help you get ready with confidence.
           </p>
 
           <p class="hero-text mb-3">
@@ -71,23 +131,29 @@
           </p>
 
           <ul class="feature-list">
-            <li>📧 Email & Internet Basics</li>
-            <li>🌐 Networking Concepts</li>
+            <li>📧 Email and Internet Basics</li>
+            <li>🌐 Networking and Internet Concepts</li>
             <li>🔐 Security Fundamentals</li>
-            <li>🛒 E-Commerce & Digital Payments</li>
-            <li>💻 HTML & Web Design Basics</li>
+            <li>🛒 E-Commerce and Digital Payment Concepts</li>
+            <li>💻 HTML Basics and Web Page Structure</li>
+            <li>🏷️ HTML Tags, Attributes, Lists, and Tables</li>
             <li>🎨 CSS Styling Concepts</li>
-            <li>🌍 Website Hosting</li>
+            <li>🔣 HTML Entities</li>
+            <li>🌍 Website Hosting Basics</li>
           </ul>
 
-          <p class="hero-text mt-3 mb-4">
-            ⚠️ You will face <strong>60 MCQs</strong> one by one.  
-            You must answer all questions before submitting.  
-            Your score will be shown at the end.
+          <div class="timer-note">
+            ⏳ <strong>Time Limit:</strong> 1 Hour 30 Minutes <br>
+            The countdown starts when you open the quiz page. When the time ends, the quiz will be submitted automatically.
+          </div>
+
+          <p class="hero-text mt-4 mb-3">
+            ⚠️ You will face <strong>60 MCQs</strong> one by one. You must answer all questions before submitting.
+            Your final marks and percentage will be shown at the end.
           </p>
 
           <p class="hero-text mb-4">
-            🚀 Ready to test your knowledge?
+            🚀 Ready to test your knowledge and prepare for your exam?
           </p>
 
           <div class="d-grid gap-3 col-12 col-sm-8 col-md-5 mx-auto">
@@ -96,7 +162,6 @@
 
         </div>
       </div>
-
     </div>
   </main>
 </body>
